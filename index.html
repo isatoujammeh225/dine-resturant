@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>food-hub</title>
+  </head>
+  <body>
+    <!-- hero section -->
+    <header
+      class="bg-black text-white md:min-h-screen md:bg-[url('/images/homepage/hero-bg-desktop.jpg')] bg-[url('/images/homepage/hero-bg-mobile.jpg')] bg-cover bg-center relative top-14 overflow-hidden py-16 md:py-0"
+    >
+      <!-- Left content -->
+
+      <div class="max-w-[1380px] w-full mx-auto py-20 px-8 mt-12 h-full">
+        <div class="relative md:text-start text-center md:mt-0">
+          <img src="/images/dine.svg" alt="logo" class="hidden md:block" />
+          <div class="mt-36 max-w-3xl">
+            <img
+              src="/images/dine.svg"
+              alt="logo"
+              class="md:hidden block mx-auto"
+            />
+            <h1
+              class="text-4xl md:text-7xl mdLtracking-widest tracking-wide md:leading-24 leading-16 font-bold my-6 ]"
+            >
+              Exquisite dining since 1989
+            </h1>
+            <p class="text-lg text-gray-300 mb-8">
+              Experience our seasonal menu in beautiful country surroundings.
+              Eat the freshest produce from the comfort of our farmhouse.
+            </p>
+            <div>
+              <a
+                href="/booking.html"
+                class="text-white md:px-6 py-3 uppercase hover:bg-white hover:text-black cursor-pointer md:border-none border-2 border-white px-16"
+              >
+                Book a Table</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- About section -->
+      <section class="overflow-hidden p-0 md:p-20 justify-center">
+        <div class="max-w-[1380px] w-full mx-auto px-8">
+          <div class="grid grid-cols-1 lg:grid-cols-2 md:items-center md:gap-6">
+            <!-- flex flex-col items-center md:flex-row md:items-center md:gap-6 -->
+            <!-- grid grid-cols-1 md:grid-cols-2 gap-14 md:relative -top-20 -->
+            <img
+              src="/images/patterns/pattern-curve-top-right.svg"
+              alt="pattern-curve-top-right"
+              class="absolute -left-36 hidden md:block"
+            />
+            <!-- desktop-img -->
+            <img
+              src="/images/homepage/enjoyable-place-desktop.jpg"
+              alt="enjoyable-place"
+              class="relative -top-14 z-10 rounded-lg shadow-gray-600 hidden lg:block"
+            />
+            <!-- tabtel -->
+            <img
+              src="/images/homepage/enjoyable-place-tablet.jpg"
+              alt="enjoyable-place"
+              class="relative -top-14 z-10 rounded-lg shadow-gray-600 hidden md:block lg:hidden"
+            />
+            <!-- mobile-img -->
+            <img
+              src="images/homepage/enjoyable-place-mobile.jpg"
+              alt=""
+              class="relative -top-14 z-10 shadow-gray-700 block md:hidden"
+            />
+
+            <div class="md:text-start text-center mb-10 py-2.5 md:mt-0">
+              <img
+                src="/images/patterns/pattern-divide.svg"
+                alt=""
+                class="md:mb-24 mb-3.5 m-auto md:m-0"
+              />
+              <h2
+                class="text-2xl md:text-4xl lg:text-5xl font-bold leading-tight mb-2.5"
+              >
+                Enjoyable place <br />
+                for all the family
+              </h2>
+              <p class="text-1xl leading-relaxed mb-12 md:mb-0">
+                Our relaxed surroundings make dining with us a great experience
+                for everyone. We can even arrange a tour of the farm before your
+                meal.
+              </p>
+              <img
+                src="/images/homepage/locally-sourced-mobile.jpg"
+                alt=""
+                class="shadow-gray-600 block md:hidden m-auto"
+              />
+            </div>
+          </div>
+          <div
+            class="grid grid-cols-1 lg:grid-cols-2 md:items-center md:justify-between gap-6"
+          >
+            <!--flex flex-col items-center md:flex-row  -->
+            <!-- grid grid-cols-1 lg:grid-cols-2 -->
+            <img
+              src="/images/patterns/pattern-curve-top-left.svg"
+              alt="pattern-curve-top-right"
+              class="absolute right-36 hidden md:block"
+            />
+            <!--  -->
+            <div class="md:text-start text-center md:mt-0">
+              <div class="justify-items-center md:justify-items-start">
+                <img
+                  src="/images/patterns/pattern-divide.svg"
+                  alt=""
+                  class="mt-3.5 mb-1.5 md:mt-24"
+                />
+              </div>
+              <h2
+                class="text-2xl md:text-4xl lg:text-5xl font-bold leading-tight mb-2.5"
+              >
+                <div>
+                  <!-- Tablet image on top text below -->
+                  <img
+                    src="/images/homepage/locally-sourced-tablet.jpg"
+                    alt=""
+                    class="rounded-lg shadow-gray-600 object-cover hidden md:block lg:hidden"
+                  />
+                </div>
+                The most locally <br />
+                sourced food
+              </h2>
+              <p class="mb-12 md:mb-0">
+                All our ingredients come directly from our farm or local
+                fishery. So you can be sure that you’re eating the freshest,
+                most sustainable food.
+              </p>
+            </div>
+            <div>
+              <!-- desktop image -->
+              <img
+                src="/images/homepage/locally-sourced-desktop.jpg"
+                alt=""
+                class="rounded-lg shadow-gray-600 object-cover relative z-20 -mb-16 hidden md:hidden lg:block"
+              />
+            </div>
+            <!-- Mobile Image below text above -->
+            <div>
+              <img
+                src="/images/homepage/locally-sourced-moblie.jpg"
+                alt=""
+                class="rounded-lg shadow-gray-600 object-cover relative z-20 -mb-16 block md:hidden"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Food source section -->
+      <section
+        class="max-w-[1380px] mx-auto p-10 bg-black text-white py-28 px-6 md:py-20 md:px-20 relative -top-14"
+      >
+        <div class="md:flex gap-10">
+          <div class="md:w-1/2 mb-12 md:text-start text-center md:mt-0">
+            <img
+              src="/images/patterns/pattern-divide.svg"
+              alt=""
+              class="mb-5 items-center m-auto"
+            />
+
+            <h2 class="text-1xl font-bold mb-6 md:text-4xl">
+              A few highlights from <br />
+              our menu
+            </h2>
+            <p class="mt-4 text-sm leading-relaxed max-w-md">
+              We cater for all dietary requirements, but here’s a glimpse at
+              some of our diner’s favourites. Our menu is revamped every season.
+            </p>
+          </div>
+          <!-- Menu -->
+          <!-- Desktop: Image on the left text on the right Mobile: Image on top text below -->
+
+          <div class="space-y-10">
+            <!-- first item -->
+            <div
+              class="flex flex-col md:flex-row md:items-center md:justify-between gap-6"
+            >
+              <!-- Desktop image -->
+              <img
+                src="/images/homepage/salmon-desktop-tablet.jpg"
+                alt="Salmon Fillet"
+                class="hidden md:block"
+              />
+              <!-- Mobile image -->
+              <img
+                src="/images/homepage/salmon-mobile.jpg"
+                alt="Salmon Fillet"
+                class="block md:hidden"
+              />
+
+              <!-- pattern -->
+              <img
+                src="/images/patterns/pattern-divide.svg"
+                alt="pattern-divide-SVG"
+                class="hidden md:block"
+              />
+
+              <div class="md:text-start text-center md:mt-0">
+                <h3 class="font-bold text-1xl md:text-2xl mb-2">
+                  Seared Salmon Fillet
+                </h3>
+                <p class="leading-7 text-lg">
+                  Our locally sourced salmon served with a refreshing buckwheat
+                  summer salad.
+                </p>
+              </div>
+            </div>
+            <hr />
+
+            <!-- item 2 -->
+
+            <div
+              class="flex flex-col md:flex-row md:items-center md:justify-between gap-6"
+            >
+              <!-- Desktop image -->
+              <img
+                src="/images/homepage/beef-desktop-tablet.jpg"
+                alt="beef"
+                class="hidden md:block"
+              />
+              <!--   Mobile image -->
+              <img
+                src="/images/homepage/beef-mobile.jpg"
+                alt="beef"
+                class="block md:hidden"
+              />
+              <img
+                src="/images/patterns/pattern-divide.svg"
+                alt="pattern-divide-SVG"
+                class="hidden md:block"
+              />
+              <div class="md:text-start text-center md:mt-0">
+                <h3 class="font-bold text-1xl md:text-2xl mb-2">
+                  Rosemary Filet Mignon
+                </h3>
+                <p class="leading-7 text-lg">
+                  Our prime beef served to your taste with a delicious choice of
+                  seasonal sides.
+                </p>
+              </div>
+            </div>
+            <hr />
+
+            <!-- item-3 -->
+
+            <div
+              class="flex flex-col md:flex-row md:items-center md:justify-between gap-6"
+            >
+              <!-- Desktop image -->
+              <img
+                src="images/homepage/chocolate-desktop-tablet.jpg"
+                alt="-Fruit-Chocolate"
+                class="hidden md:block"
+              />
+              <!-- Mobile image -->
+              <img
+                src="images/homepage/chocolate-mobile.jpg"
+                alt="-Fruit-Chocolate"
+                class="block md:hidden"
+              />
+              <img
+                src="/images/patterns/pattern-divide.svg"
+                alt="pattern-divide-SVG"
+                class="hidden md:block"
+              />
+
+              <div class="md:text-start text-center md:mt-0">
+                <h3 class="font-bold text-1xl md:text-2xl mb-2">
+                  Summer Fruit Chocolate Mousse
+                </h3>
+                <p class="leading-7 text-lg">
+                  Creamy mousse combined with summer fruits and dark chocolate
+                  shavings.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              src="/images/patterns/pattern-lines.svg"
+              alt=""
+              class="relative bottom-[400px] z-20 right-7 hidden md:block"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="">
+        <!-- Family Gathering Section -->
+        <div
+          class="max-w-[1380px] w-full mx-auto bg-gray-100 text-black relative -top-14 block py-20 md:py-0"
+        >
+          <div class="">
+            <img
+              id="pattern-img"
+              src="/images/patterns/pattern-curve-top-right.svg"
+              alt="pattern-curve-top-right"
+              class="w-2xl hidden md:block"
+            />
+          </div>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-14 md:relative -top-20"
+          >
+            <!--  justify-center flex flex-col md:flex-row md:items-center -->
+            <div class="">
+              <img
+                id="event-image"
+                src="/images/homepage/family-gathering-desktop.jpg"
+                alt="Family-gathering"
+                class="w-full rounded-xl shadow-xl object-cover transition-opacity duration-500 opacity-100 block mt-10 md:mt-0"
+              />
+              <img
+                src="/images/patterns/pattern-lines.svg"
+                alt="pattern-lines.svg"
+                class="relative bottom-[650px] right-8 hidden md:block"
+              />
+            </div>
+            <div class="flex flex-col md:text-start text-center">
+              <ul
+                id="eventList"
+                class="block md:hidden mb-2.5 text-center leading-8"
+              >
+                <li
+                  data-event="family"
+                  class="font-semibold text-shadow-gray-900 cursor-pointer transition-opacity duration-500 opacity-100"
+                >
+                  Family Gathering
+                </li>
+                <li
+                  data-event="special"
+                  class="font-semibold text-shadow-gray-900 cursor-pointer transition-opacity duration-500 opacity-100"
+                >
+                  Special Events
+                </li>
+                <li
+                  data-event="social"
+                  class="font-semibold text-shadow-gray-900 cursor-pointer transition-opacity duration-500 opacity-100"
+                >
+                  Social Events
+                </li>
+              </ul>
+              <h2
+                id="event-title"
+                class="text-3xl md:text-1xl font-bold mb-6 md:text-4xl text-center md:text-start transition-opacity duration-500 opacity-100"
+              >
+                Family Gathering
+              </h2>
+              <p
+                id="eventText"
+                class="text-1xl text-center md:text-start text-gray-900 mb-5 leading- pb-1.5 transition-opacity duration-500 opacity-100"
+              >
+                We love catering for entire families. So please bring <br />
+                everyone along for a special meal with your loved <br />
+                ones. We’ll provide a memorable experience for all.
+              </p>
+              <div>
+                <a
+                  href="/booking.html"
+                  class="bg-black text-white md:bg-white md:text-black font-bold uppercase md:border-1 border-black px-10 py-3 cursor-pointer outline-0"
+                >
+                  Book a Table</a
+                >
+                <!-- </button> -->
+              </div>
+              <ul
+                id="eventList"
+                class="mt-10 space-y-2 text-sm tracking-wide uppercase leading-8 hidden md:block"
+              >
+                <li
+                  data-event="family"
+                  class="font-semibold text-shadow-gray-900 cursor-pointer transition-opacity duration-500 opacity-100"
+                >
+                  Family Gathering
+                </li>
+                <li
+                  data-event="special"
+                  class="font-semibold text-shadow-gray-900 cursor-pointer transition-opacity duration-500 opacity-100"
+                >
+                  Special Events
+                </li>
+                <li
+                  data-event="social"
+                  class="font-semibold text-shadow-gray-900 cursor-pointer transition-opacity duration-500 opacity-100"
+                >
+                  Social Events
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Reservation section -->
+      <section
+        class="max-w-[1380px] w-full mx-auto bg-gray-100 text-black relative md:relative -top-16"
+      >
+        <div
+          class="text-white bg-[url('/images/homepage/ready-bg-desktop.jpg')] bg-cover md:flex md:justify-between md:px-44 px-2 p-20 flex flex-col md:flex-row justify-center"
+        >
+          <h2 class="text-1xl font-bold mb-6 md:text-3xl text-center">
+            Ready to make a reservation?
+          </h2>
+          <button>
+            <a
+              href="booking.html"
+              class="text-white md:bg-white md:text-black uppercase border-2 border-white px-10 py-3 mt-1.5 mb-2.5 cursor-pointer"
+              >Book a table</a
+            >
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="bg-black max-w-[1380px] w-full mx-auto relative md:relative -top-16"
+    >
+      <div
+        class="text-white flex flex-col items-center text-center gap-5 p-10 md:gap-48 md:flex-row md:items-center"
+      >
+        <div>
+          <img src="/images/dine.svg" alt="" />
+        </div>
+        <div>
+          <p>Marthwaite, Sedbergh</p>
+          <p>Cumbria</p>
+          <p>+00 44 123 4567</p>
+        </div>
+        <div class="">
+          <p>Open Times</p>
+          <p>Mon - Fri: 09:00 AM - 10:00 PM</p>
+          <p>Sat - Sun: 09:00 AM - 11:30 PM</p>
+        </div>
+      </div>
+    </footer>
+    <script src="/src/main.js"></script>
+  </body>
+</html>

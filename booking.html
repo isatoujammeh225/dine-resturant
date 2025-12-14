@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book a Table</title>
+    <link href="/src/style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="max-w-[1380px] w-full mx-auto">
+      <!-- relative md:relative -top-16 -->
+      <div
+        class="bg-[url('/images/booking/hero-bg-desktop.jpg')] object-cover py-20 px-10"
+      >
+        <img src="/images/dine.svg" alt="logo" class="md:m-0 m-auto" />
+        <h1
+          class="text-5xl text-white py-6 md:text-7xl mdLtracking-widest tracking-wide md:leading-24 leading-16 font-bold my-6 text-center md:text-start"
+        >
+          Reservations
+        </h1>
+        <p class="text-sm text-white mb-3.5 text-center md:text-start">
+          We can’t wait to host you. If you have any special <br />
+          requirements please feel free to call on the phone <br />
+          number below. We’ll be happy to accommodate you.
+        </p>
+        <button
+          type="submit"
+          class="bg-black border border-white text-white font-semibold uppercase py-3 px-9 mb-10 cursor-pointer block md:hidden m-auto"
+        >
+          Place A Reservation
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="max-w-[1380px] w-full mx-auto">
+        <div class="flex flex-col md:flex-2 justify-center relative">
+          <!-- grid grid-cols-1 md:grid-cols-2 gap-14 md:relative -top-20 -->
+          <div class="relative w-full top-0">
+            <img
+              src="/images/patterns/pattern-curve-bottom-right.svg"
+              alt=""
+              class="md:absolute z-10 w-2/3 hidden md:block"
+            />
+            <div class="flex items-end w-full">
+              <img
+                src="/images/patterns/pattern-lines.svg"
+                alt=""
+                class="mx-auto relative z-20 -bottom-24 hidden md:block"
+              />
+            </div>
+          </div>
+
+          <form
+            class="space-y-6 lg:max-w-lg mx-10 bg-white shadow-xl p-8 rounded-sm md:absolute z-30 md:-mt-80 md:right-36 relative -top-20"
+          >
+            <!-- name -->
+            <div>
+              <input
+                type="text "
+                required
+                placeholder="Name"
+                class="w-full border-b border-gray-600 focus:outline-none py-3 text-gray-700 placeholder-gray-400"
+              />
+            </div>
+            <div>
+              <!-- email -->
+              <input
+                type="email"
+                required
+                placeholder="Email"
+                class="w-full border-b border-gray-600 focus: outline-none py-3 text-gray-800 placeholder-gray-400"
+              />
+            </div>
+
+            <!-- date -->
+            <div class="">
+              <label class="block text-gray-700 font-semibold mb-2">
+                Pick a date</label
+              >
+
+              <div class="flex gap-10">
+                <input
+                  type="number"
+                  placeholder="MM"
+                  class="w-1/2 py-2 text-center border-b border-red-900 outline-none"
+                  min="1"
+                  max="12"
+                />
+                <input
+                  type="number"
+                  placeholder="DD"
+                  class="w-1/2 py-2 text-center border-b border-red-900 outline-none"
+                  min="1"
+                  max="31"
+                />
+                <input
+                  type="number"
+                  placeholder="YYYY"
+                  class="w-1/2 py-2 text-center border-b border-red-900 outline-none"
+                />
+              </div>
+            </div>
+            <!-- Time -->
+
+            <div class="">
+              <label class="block"> Pick a time</label>
+              <div class="flex gap-10">
+                <input
+                  type="number"
+                  placeholder="09"
+                  class="w-1/2 py-2 text-center border-b border-red-900 outline-none"
+                />
+                <input
+                  type="number"
+                  placeholder="00"
+                  class="w-1/2 py-2 text-center border-b border-red-900 outline-none"
+                  min="0"
+                  max="59"
+                />
+                <select
+                  class="w-1/2 py-2 text-center border-b border-gray-900 outline-none cursor-pointer"
+                >
+                  <option class="">AM</option>
+                  <option>PM</option>
+                </select>
+              </div>
+            </div>
+            <!-- people -->
+            <div class="border-b border-b-black flex py-3 justify-between">
+              <button type="button" id="minus" class="cursor-pointer">-</button>
+              <span id="people" class="font-bold">4 people</span>
+
+              <button type="button" id="plus" class="cursor-pointer">+</button>
+            </div>
+            <!-- submit btn -->
+            <button
+              type="submit"
+              class="w-full border border-gray-800 text-gray-700 font-bold uppercase py-3 cursor-pointer"
+            >
+              Make Reservation
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="bg-black max-w-[1380px] w-full mx-auto md:relative -bottom-44"
+    >
+      <div
+        class="text-white flex flex-col items-center text-center gap-5 p-10 md:gap-48 md:flex-row md:items-center"
+      >
+        <div>
+          <img src="/images/dine.svg" alt="" />
+        </div>
+        <div>
+          <p>Marthwaite, Sedbergh</p>
+          <p>Cumbria</p>
+          <p>+00 44 123 4567</p>
+        </div>
+        <div class="">
+          <p>Open Times</p>
+          <p>Mon - Fri: 09:00 AM - 10:00 PM</p>
+          <p>Sat - Sun: 09:00 AM - 11:30 PM</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const minusBtn = document.querySelector("#minus");
+      const plusBtn = document.querySelector("#plus");
+      const peopleText = document.querySelector("#people");
+      //update text function
+      let count = 4;
+      function updatePeople() {
+        peopleText.textContent = `${count}${""} People`;
+      }
+      //Decrease button
+      minusBtn.addEventListener("click", () => {
+        if (count > 1) {
+          count--;
+          updatePeople();
+        }
+      });
+      // Increase button
+      plusBtn.addEventListener("click", () => {
+        if (count < 10) {
+          count++;
+          updatePeople();
+        }
+      });
+    </script>
+  </body>
+</html>
